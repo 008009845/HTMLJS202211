@@ -5,18 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riddles with JavaScript</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+    <link rel="stylesheet" href="https://fonts.googlrapis.com/css?family=Ribik+Bubbles&display=swap">
+    <style>
+      
+
+        @font-face {
+            font-family: grasstype;
+            src: url(fonts/ScrambleStorm.ttf);
+        }
+        body{
+            -webkit-text-stroke-width:1px;
+            -webkit-text-stroke-color:red;
+            font-family: grasstype;
+
+        }
+    </style>
 </head>
 <body>
     <ul>
         <li>
             <p>What is Black and White and read all over?</p>
             <br>
-            <p onclick="showAnswer('answer','A newspaper!')" id="answer">Answer</p>
+            <button onclick="showAnswer('answer','A newspaper!')">Click for answer</button>
+            <span id="answer">Answer</span>
         </li>
         <li>
             <p>What gets bigger the more that is taken away??</p>
             <br>
-            <p onclick="showAnswer('answer2','A hole!')" id="answer2">Answer</p>
+            <button onclick="showAnswer('answer2','A hole!')">Click for answer</button>
+            <span id="answer2">Answer</span>
+            <hr>
         </li>
     </ul>
     <script src="riddles.js"></script>
