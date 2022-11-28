@@ -13,15 +13,15 @@ ctx.strokeText("Welcome to the RPS Game!", 125,280);
 var rps = ["rock", "paper", "scissors"];
 //console.log(rps[2]);
 
-document.getElementById("rock").addEventListener('click', function (e) {
+document.getElementById("rock").addEventListener('click', function (e){
     alert("you picked " + rps[0]);
     playGame(rps[0]);
 });
-document.getElementById("paper").addEventListener('click', function (e) {
+document.getElementById("paper").addEventListener('click', function (e){
     alert("you picked " + rps[1]);
     playGame(rps[1]);
 });
-document.getElementById("scissor").addEventListener('click', function (e) {
+document.getElementById("scissor").addEventListener('click', function (e){
     alert("you picked " + rps[2]);
     playGame(rps[2]);
 });
