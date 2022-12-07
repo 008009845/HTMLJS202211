@@ -18,6 +18,7 @@ var seconds=3;
 var fps=60;
 var frames=fps;
 
+
 //load game sprites
 var carsprite=new Image();
 carsprite.src="images/car.png";
@@ -76,7 +77,7 @@ function drawStartFinish(){
     //Start Line
     ctx.fillRect(start, 58, 10, 500);
     //Finish Line
-    ctx.fillRect(finish, 956, 10, 500);
+    ctx.fillRect(finish, 58, 10, 500);
 }
 
 function drawCar(){
@@ -84,6 +85,7 @@ function drawCar(){
      //ctx.fillStyle="red";
      //ctx.fillRect(carPos, canvas.height/2, 40, 20);
      ctx.drawImage(carsprite, carPos, canvas.height/2, carWidth,20);
+
 }
 
 function drawFuelBar(){
