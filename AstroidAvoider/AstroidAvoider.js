@@ -212,7 +212,7 @@ function Asteroid(){
         ctx.save();
         ctx.beginPath();
         ctx.fillStyle=this.color;
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2, true);
+        ctx.arc(this.y, this.x, this.radius, 0, Math.PI*2, true);
         ctx.closePath();
         ctx.fill();
         ctx.restore();
@@ -227,14 +227,15 @@ function PlayerShip(){
     this.height=20;
     this.up=false;
     this.down=false;
-    this.left=false;
-    this.right=false;
+    this.left=true;
+    this.right=true;
     this.vx=0;
     this.vy=0;
 
     this.drawShip=function(){
         ctx.save();
         ctx.translate(this.x, this.y);
+        
 
         //draw the thruster
         if(this.up||this.left||this.right){
